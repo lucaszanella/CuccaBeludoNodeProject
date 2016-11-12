@@ -1,0 +1,64 @@
+#About
+
+This is a funny python3 project that makes it easy for people to send
+tweets in the name of a fake twitter account with a funny
+name that can only be understandable when pronounced, so
+live TV shows will often pronounce the name of the account
+together with its sent opinion. 
+
+#How it works
+
+People just DM the profile with the exact message it wants it
+to tweet and the profile will tweet it. For example, sending
+the DM:
+
+@TVnews that's a very tragic accident and I feel sorry for the 
+family
+
+will tweet the exact text above. 
+
+#Usage
+Make sure you have `tweepy` installed. If not, just 
+
+```
+sudo pip3 install tweepy 
+```
+If you don't have `pip` either, then do:
+
+```
+sudo apt-get install python3-pip
+```
+
+Just do the following (before doing it, please read below)
+
+```
+git clone https://github.com/lucaszanella/CuccaBeludoProject
+cd CuccaBeludoProject
+nano tokens.txt
+python3 cucca.py
+```
+
+You must have a file named tokens.txt with this configuration:
+
+```
+consumer_key = "your consumer key"
+consumer_secret = "your consumer secret"
+access_token = "your token"
+access_token_secret = "your token secret"
+```
+
+PS: spaces and double quotes aren't necessary, they'll be ignored,
+but you can keep them.
+Remember that once you create the twitter app, it may be setted to 
+no direct messages permission as default. Once you change that,
+you need to renew the 'access token' and 'access token secret'.
+
+You can optionally include a ban.json file with banned twitter 
+IDs in the form:
+```
+{
+"list":[id1, id2, id3]
+}
+```
+
+

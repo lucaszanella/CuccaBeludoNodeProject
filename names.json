@@ -1,0 +1,17 @@
+{
+	"accounts":{
+		"cuccabeludo":{"name":"Cucca Beludo","password":"", },
+		"paulatejano":{"name":"Paula Tejano","password":""},
+		"tomasturbando":{"name":"Thomas Turbando", "password":""},
+		"isadorapinto":{"name":"Isadora Pinto", "password":""},
+		"onabotaduro":{"name":"Onabo Taduro", "password":""},
+		"paulobrificado":{"name":"Paulo Brificado", "password":""},
+		"benjamimarrola":{"name":"Benjamim Arrola", "password":""},
+		"isadorabochetti":{"name":"Isadora Bocchetti", "password":""},
+		"seukumiama":{"name":"Seul Kumiama", "password":""},
+		"tokokudoendo":{"name":"Toko Kudo Endo", "password":""},
+		"paulanorrego":{"name":"Paula Norrego", "password":""},
+		"jacintokunamangueira":{"name":"Jacinto Ocuna Mangueira", "password":""},
+		"jacintodores":{"name":"Jacinto Dores Aquino Pinto", "password":""}
+	}
+}
