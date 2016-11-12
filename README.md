@@ -1,6 +1,6 @@
 #About
 
-This is a funny python3 project that makes it easy for people to send
+This is a funny nodejs project that makes it easy for people to send
 tweets in the name of a fake twitter account with a funny
 name that can only be understandable when pronounced, so
 live TV shows will often pronounce the name of the account
@@ -18,16 +18,13 @@ family
 will tweet the exact text above. 
 
 #Usage
-Make sure you have `tweepy` installed. If not, just 
+Make sure you have `npm` and `twit`(for nodejs) installed. If not, just 
 
 ```
-sudo pip3 install tweepy 
+sudo apt install npm
+npm install twit
 ```
-If you don't have `pip` either, then do:
 
-```
-sudo apt-get install python3-pip
-```
 
 Just do the following (before doing it, please read below)
 
@@ -35,7 +32,7 @@ Just do the following (before doing it, please read below)
 git clone https://github.com/lucaszanella/CuccaBeludoProject
 cd CuccaBeludoProject
 nano tokens.txt
-python3 cucca.py
+nodejs cucca.js
 ```
 
 You must have a file named tokens.txt with this configuration:
@@ -52,13 +49,5 @@ but you can keep them.
 Remember that once you create the twitter app, it may be setted to 
 no direct messages permission as default. Once you change that,
 you need to renew the 'access token' and 'access token secret'.
-
-You can optionally include a ban.json file with banned twitter 
-IDs in the form:
-```
-{
-"list":[id1, id2, id3]
-}
-```
 
 
