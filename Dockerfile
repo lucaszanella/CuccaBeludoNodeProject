@@ -20,5 +20,4 @@ RUN npm install twit \
     && echo access_token_secret=$ACCESS_TOKEN_SECRET >> tokens.txt \\
     && cat tokens.txt
 
-#ENTRYPOINT ["node CuccaBeludoNodeProject/cucca.js"]
 ENTRYPOINT ["node", "CuccaBeludoNodeProject/cucca.js"]
