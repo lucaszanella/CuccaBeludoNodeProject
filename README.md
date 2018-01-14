@@ -1,4 +1,4 @@
-#About
+# About
 
 This is a funny nodejs project that makes it easy for people to send
 tweets in the name of a fake twitter account with a funny
@@ -6,7 +6,7 @@ name that can only be understandable when pronounced, so
 live TV shows will often pronounce the name of the account
 together with its sent opinion. 
 
-#How it works
+# How it works
 
 People just DM the profile with the exact message it wants it
 to tweet and the profile will tweet it. For example, sending
@@ -17,7 +17,32 @@ family
 
 will tweet the exact text above. 
 
-#Usage
+# Usage (with docker)
+First clone and edit the dockerfile to include the `consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`
+
+```
+git clone https://github.com/lucaszanella/CuccaBeludoProject
+cd CuccaBeludoProject
+nano Dockerfile
+```
+
+Build:
+
+```
+sudo docker build -t cuccabeludo .
+```
+
+Run
+
+```
+sudo docker run --rm --restart unless-stopped cuccabeludo
+
+```
+
+You can even log out of the ssh session or your terminal because `--restart unless-stopped` will guarantee that it runs again because you didn't explicitly run `docker stop`
+
+
+# Usage (no docker)
 Make sure you have `npm` and `twit`(for nodejs) installed. If not, just 
 
 ```
