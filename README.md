@@ -35,7 +35,7 @@ sudo docker build -t cuccabeludo .
 Run
 
 ```
-sudo docker run --rm --restart unless-stopped cuccabeludo
+sudo docker run --restart unless-stopped cuccabeludo
 
 ```
 
