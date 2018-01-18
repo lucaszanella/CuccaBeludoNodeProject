@@ -21,7 +21,7 @@ will tweet the exact text above.
 First clone and edit the dockerfile to include the `consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`
 
 ```
-git clone https://github.com/lucaszanella/CuccaBeludoProject
+git clone https://github.com/lucaszanella/CuccaBeludoNodeProject
 cd CuccaBeludoProject
 nano Dockerfile
 ```
