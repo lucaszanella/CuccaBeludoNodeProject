@@ -18,7 +18,15 @@ family
 will tweet the exact text above. 
 
 # Usage (with docker)
-First clone and edit the dockerfile to include the `consumer_key`, `consumer_secret`, `access_token` and `access_token_secret`
+First clone and edit the dockerfile and edit
+```
+ARG CONSUMER_KEY=""
+ARG CONSUMER_SECRET=""
+ARG ACCESS_TOKEN=""
+ARG ACCESS_TOKEN_SECRET=""
+ARG BOT_OWN_ID=""
+```
+According to your bot configurations. You can get the id of your bot here: http://mytwitterid.com/. I know that I could get with the API but this project is just a joke and it was written years ago and I'm lazy. So:
 
 ```
 git clone https://github.com/lucaszanella/CuccaBeludoNodeProject
@@ -67,6 +75,7 @@ consumer_key = "your consumer key"
 consumer_secret = "your consumer secret"
 access_token = "your token"
 access_token_secret = "your token secret"
+bot_own_id = "your bot id"
 ```
 
 PS: spaces and double quotes aren't necessary, they'll be ignored,
