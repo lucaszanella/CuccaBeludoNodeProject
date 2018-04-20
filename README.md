@@ -26,7 +26,9 @@ ARG ACCESS_TOKEN=""
 ARG ACCESS_TOKEN_SECRET=""
 ARG BOT_OWN_ID=""
 ```
-According to your bot configurations. You can get the id of your bot here: http://mytwitterid.com/. I know that I could get with the API but this project is just a joke and it was written years ago and I'm lazy. So:
+According to your bot configurations. You can get the id of your bot here: http://mytwitterid.com/. I know that I could get with the API but this project is just a joke and it was written years ago and I'm lazy. Your bot id is extremely necessary otherwise the bot will answer to itself in a loop.
+
+So:
 
 ```
 git clone https://github.com/lucaszanella/CuccaBeludoNodeProject
