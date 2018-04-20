@@ -9,16 +9,15 @@ var tokensList = tokensFile.replace(/"/g, '').replace(/ /g, '').split(/\r?\n/); 
 var listOfAccountNames = [];//just for convenience, but for immutability I'll prefer to use the list of IDs below
 var listOfAccountIds = []
 
-listOfAccountIds.push("756710315048534016");//cuccabeludo's id
-
-
 //Iterates through each token name and value and saves it to tokens dict
 tokensList.forEach(function(token) {
     tokenName = token.split("=")[0]
     tokenValue = token.split("=")[1]
-        //console.log(currentToken);
     tokens[tokenName] = tokenValue;
 });
+
+listOfAccountIds.push(tokens["bot_own_id"]);
+console.log('bot id' + listOfAccountIds[0]); //Must know its own ID otherwise it'll keep answering messages from itself
 
 var T = new Twit({
     consumer_key: tokens["consumer_key"],
@@ -30,9 +29,6 @@ var T = new Twit({
 
 var stream = T.stream('statuses/sample')
 
-//
-//  filter the twitter public stream by the word 'mango'.
-//
 var stream = T.stream('user')
 
 stream.on('direct_message', function(direct_message) {
